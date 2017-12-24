@@ -1,0 +1,6 @@
+Sun Dec 24 16:36:00 2017: iniciando encuestador
+Sun Dec 24 16:36:00 2017: log en [C:\Users\Julio\Dropbox\current\eContact\switcher\switchover.log]
+Sun Dec 24 16:36:00 2017: configuracion desde en [switchover.conf]
+Sun Dec 24 16:36:29 2017: *********** Activando Switchover ************
+Sun Dec 24 16:36:29 2017: ejecutando 	 C:\Users\Julio\Dropbox\current\eContact\switcher\failover.ps1
+Sun Dec 24 16:36:40 2017: ternminando switcher.pl

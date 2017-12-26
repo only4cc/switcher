@@ -1,6 +1,21 @@
-Sun Dec 24 16:36:00 2017: iniciando encuestador
-Sun Dec 24 16:36:00 2017: log en [C:\Users\Julio\Dropbox\current\eContact\switcher\switchover.log]
-Sun Dec 24 16:36:00 2017: configuracion desde en [switchover.conf]
-Sun Dec 24 16:36:29 2017: *********** Activando Switchover ************
-Sun Dec 24 16:36:29 2017: ejecutando 	 C:\Users\Julio\Dropbox\current\eContact\switcher\failover.ps1
-Sun Dec 24 16:36:40 2017: ternminando switcher.pl
+Tue Dec 26 16:03:36 2017: iniciando encuestador
+Tue Dec 26 16:03:36 2017: log en [C:\Users\Julio\Dropbox\current\eContact\switcher\switchover.log]
+Tue Dec 26 16:03:36 2017: configuracion desde en [switchover.conf]
+Tue Dec 26 16:12:02 2017: *********** Activando Switchover ************
+Tue Dec 26 16:12:02 2017: ejecutando 	 C:\Users\Julio\Dropbox\current\eContact\switcher\failover.ps1
+Tue Dec 26 16:12:09 2017: 
+
+Progress     : 0
+RunManually  : True
+Log          : {}
+CreationTime : 26-12-2017 16:12:08
+EndTime      : 01-01-1900 0:00:00
+JobId        : d2406f8b-b8df-41c4-bc87-f27b52f924de
+Result       : None
+State        : Starting
+Id           : e66115ea-7f50-456e-bbe8-0c6b00e408b1
+
+
+
+
+Tue Dec 26 16:12:09 2017: finalizando switcher.pl

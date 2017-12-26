@@ -28,6 +28,7 @@ use Checks qw(encuesta_demo encuesta_1433);
 use Status qw(sput);
 
 # Constantes
+my $QA = 0;
 my $pwspath='C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe';   # ubicacion de powershell
 my $pwd = Cwd::getdcwd();
 my $logfile=$pwd.'\\switchover.log';
@@ -75,8 +76,8 @@ while ( 1 ) {
     $t0 = [gettimeofday];
     timeout $nb_secs => sub {
         # Siguiente codigo va ser interrumpido si corre por mas de $nb_secs segundos.
-        $res = encuesta_demo();                             # Solo para probar 
-        #$res = encuesta_1433( $service_A,  $nb_secs );     # Habilitar 
+        $res = encuesta_demo() if $QA;                       # Solo para probar 
+        $res = encuesta_1433( $service_A,  $nb_secs ) if ( ! $QA );     # Habilitar 
     };
     if ($@) {
         print localtime().": termino por Timeout!\n";
@@ -127,8 +128,10 @@ sub accion {
 #       die "$0 no se pudo conectar usando [$ps_script]\n";
     }
 
+    if ( $stdout ) {
+            $log->log( level => 'info', message => localtime().": $stdout\n");
+    } 
     $log->log( level => 'info', message => localtime().": finalizando $0\n");
-    $log->log_and_die( level => 'info', message => localtime().": $stdout\n");
 
     exit;   ### <<<<---- por el momento termina despues de gatillar la sol. de switchover a Veeam
 }

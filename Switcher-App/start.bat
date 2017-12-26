@@ -1,0 +1,1 @@
+plackup bin\app.psgi
